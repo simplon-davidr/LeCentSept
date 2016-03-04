@@ -1,0 +1,471 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*:before,*:after{
+	box-sizing: inherit;
+}
+
+@font-face {
+	font-family:"Myriad Pro Light";
+	src: url(../font/MyriadPro-Light.otf);
+}
+
+body{
+	font-family:Myriad Pro Light, sans-serif;
+	font-size: 1.1em;
+	color: rgb(48, 60, 86);
+}
+
+ul,li{
+	/*list-style: none;*/
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+
+section{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+section .containerBis{
+	/*border: 1px solid blue;*/
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	width: 90%;
+}
+
+h1,h2,h4,h5{
+	width:100%;
+	text-align: center;
+}
+
+h2{
+	font-size: 3.5vw;
+	margin: 0 0 1em;
+	/*background-color: rgb(48, 60, 86);*/
+	color: rgb(48, 60, 86);
+	width: 35%;
+}
+
+.title{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+span{
+	width: 30%;
+	border: 1px solid rgb(48, 60, 86);
+	height: 0;
+}
+
+span p{
+	visibility: hidden;
+}
+
+.container{
+	width: 100%;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+menu
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.btn_menu,.menu{
+	position: fixed;
+	z-index: 3;
+}
+
+.btn_menu{
+	margin: 1em;
+	display: flex;
+	align-items: center;
+	/*background-color: rgba(0,0,0,0.7);*/
+}
+
+.btn_menu h3,.btn_menu img{
+	margin: .5em;
+}
+
+.menu{
+	width: 20%;
+	height: 100vh;
+	opacity: .9;
+	background-color: #303030;
+	display: none;
+}
+
+nav a, nav h3{
+	display: block;
+	color: white;
+	padding: .5em;
+}
+
+nav h3{
+	text-align: center;
+}
+.btn_del{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin: .5em;
+}
+
+.clear{
+	clear: both;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+header
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.header{
+	align-items: center;
+	text-align: center;
+}
+div .infos{
+	width: 70%;
+	/*margin: 2em;*/
+}
+
+.containerBis h1 img{
+	width: 70%;
+	height: auto;
+}
+
+.header a{
+	font-weight: bolder;
+	color: rgb(217,45,44);
+}
+#croquis{
+	margin-bottom: 1%;
+	width: 70%;
+	height: auto;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ecosysteme
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.ecosysteme .containerBis img{
+	margin: 3em auto;
+}
+.ecosysteme{
+	background-image: url(../img/lyon-NB.jpg);
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+missions
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.missions h3{
+	margin: 1em 0 0 ;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.containerBis .bloc{
+	border: 1px solid white;
+	width: 33%;
+	flex-grow: 1;
+	height: 35vh;
+	text-align: center;
+	display: flex;
+	align-items: baseline;
+}
+
+.containerBis #barometre{
+	width: 66%;
+	flex-grow: 2;
+	border-right: none;
+}
+
+#barometre article{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+
+.bloc article p{
+	width: 60%;
+	margin: 1em auto;
+}
+
+.bloc article{
+	color: white;
+	height: 100%;
+	background-color: rgba(217,48 ,44 , 0.6);
+}
+
+#barometre article p{
+	width: 100%;
+}
+
+#detection, #barometre,#promotion,#selection,#accompagnement{
+	position: relative;
+}
+
+#detection img, #barometre img,#promotion img,#selection img,#accompagnement img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: .7;
+}
+#barometre li{
+	font-size: 0.85em;
+	list-style-type: none;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+engagements
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.engagements .containerBis div{
+	display: flex;
+	flex-flow: wrap;
+}
+
+.engagements span{
+	width: 25%;
+}
+
+.pour_le_territoire,.porteurs_de_projet,.le_centsept,.engagements ul{
+	width: 28%;
+	text-align: justify;
+	margin-bottom: 2em;
+}
+
+.back-territoire,.back-projet,.back-centsept{
+	width: 100%;
+	height: 40vh;
+	/*border: 1px solid rgb(48, 60, 86);*/
+}
+
+.back-territoire{
+	background-image: url("../img/tree.jpg");
+	background-size: cover;
+}
+
+.back-projet{
+	background-image: url("../img/projet.jpg");
+	background-size: cover;
+}
+
+.ul_projet li,.ul_centsept li,.ul_territoire li{
+	margin: .5em 0;
+	list-style-type: none;
+}
+
+.back-centsept{
+	background-image: url("../img/back107.jpg");
+	background-size: cover;
+}
+
+.pour_le_territoire{
+	order: 1;
+}
+
+.porteurs_de_projet{
+	order: 2;
+}
+
+.le_centsept{
+	order:3;
+}
+
+.ul_territoire{
+	order: 4;
+}
+
+.ul_projet{
+	order: 5;
+}
+
+.ul_centsept{
+	order: 6;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+nous connaitre
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.connaitre .containerBis{
+	/*border: 1px solid blue;*/
+	background-color: rgb(48, 60, 86);
+	color: white;
+}
+
+.connaitre .containerBis div{
+	/*margin: .8em 0;*/
+}
+
+.connaitre .title{
+	background-color: white;
+	margin: 0;
+}
+.connaitre h2{
+	background-color: white;
+	color: rgb(48, 60, 86);
+	margin-bottom: .5em;
+}
+
+.connaitre h3{
+	font-size: 1.5em;
+	background-color: white;
+	color: rgb(48, 60, 86);
+	width: 100%;
+	padding: .5em 0;
+	text-align: center;
+}
+
+.containerBis .territoire,.containerBis .acteurs,.containerBis .partenaires,.partenaires .prives,.partenaires .institutionnels{
+	display: flex;
+	flex-flow: wrap;
+	align-items:center;
+	justify-content: space-around;
+	/*margin: .8em 0 ;*/
+	/*background-color: red;*/
+}
+
+.territoire div, .prives div,.institutionnels div{
+	width: 100px;
+	height: auto;
+}
+
+.territoire img, .partenaires img{
+	width: 100%;
+	height: 100%;
+}
+
+.containerBis .partenaires,.containerBis .territoire{
+	width: 100%;
+	/*border: 1px solid green;*/
+}
+
+.partenaires .institutionnels{
+	width: 75%;
+}
+
+.partenaires .prives{
+	width: 20%;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+contact
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+#contact-box{
+	width: 80vw;
+	background-color: rgb(48, 60, 86);
+	border-radius: 5px;
+
+}
+.contact{
+	/*border: 1px solid grey;*/
+	width: 100%;
+}
+.contact .map{
+	width: 45%;
+}
+.contact .adresse{
+	width: 30%;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.adresse img{
+	width: 32px;
+	height: 32px;
+}
+.map #map-container {
+	width: 100%;
+	height: auto;
+}
+
+#contact_form {
+  display: flex;
+  width: 100%;
+  /*border: 1px solid red;*/
+  border-radius: 5px;
+  background-color: rgb(48, 60, 86);
+  color: white;
+justify-content: space-around;
+align-items: center;
+
+}
+form {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+}
+label{
+  align-self: flex-start;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+input{
+  height: 25px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+
+}
+textarea{
+width: auto;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+form em{
+  font-size: 0.7em;
+  color: rgb(217,45,44);
+}
+button{
+  background-color: brown;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  margin-top: 4%;
+}
+.error_contact{
+  background-color: red;
+  color: white;
+  width: 90%;
+  align-self: center;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.success_contact{
+  background-color: green;
+  color: white;
+  width: 90%;
+  align-self: center;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	background-color: rgb(48, 60, 86);
+	color: white;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
